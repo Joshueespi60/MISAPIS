@@ -8,9 +8,9 @@ const conectarMongoDB = async () => {
         return;
     }
 
-    const uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/backendmarlonvega';
+    const uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/backendespinal';
     if (!process.env.MONGO_URI) {
-        console.warn('MONGO_URI no definida. Usando MongoDB local: mongodb://127.0.0.1:27017/backendmarlonvega'.yellow);
+        console.warn('MONGO_URI no definida. Usando MongoDB local: mongodb://127.0.0.1:27017/backendespinal'.yellow);
     }
 
     try {
